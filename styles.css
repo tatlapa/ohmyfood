@@ -680,17 +680,6 @@ main .text_dessert {
 }
 
 @media (min-width: 768px) { 
-
-    @keyframes appear {
-        0% {
-            opacity: 0;
-            transform: translateY(100%);
-          }
-          100% {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
         
     main .fonctionnement .title_fonctionnement {
         text-align: center;
@@ -735,6 +724,17 @@ main .text_dessert {
         margin-right: 190px;
 
     }
+
+    @keyframes appear {
+        0% {
+            opacity: 0;
+            transform: translateY(100%);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
 
     .container {
     display: grid;
