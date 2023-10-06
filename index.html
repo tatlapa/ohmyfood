@@ -9,12 +9,9 @@
       src="https://kit.fontawesome.com/f079e80ea1.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Shrikhand&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -36,22 +33,20 @@
     </header>
 
     <main>
-      <div class="paris">
-        <img src="icons/Pin.svg" alt="" />
+      <section class="localisation">
+        <i class="fa-solid fa-location-dot"></i>
         <p>Paris, Belleville</p>
-      </div>
+      </section>
 
-      <div class="reservation">
+      <section class="reservation">
         <p class="text_reservation-0">Réservez le menu qui vous convient</p>
         <p class="text_reservation-1">
-          Découvrez des restaurants d’exception,
-          <br />
-          sélectionnés par nos soins.
+          Découvrez des restaurants d’exception, sélectionnés par nos soins.
         </p>
         <button class="button_reservation">Explorer nos restaurants</button>
-      </div>
+      </section>
 
-      <div class="fonctionnement">
+      <section class="fonctionnement">
         <p class="title_fonctionnement">Fonctionnement</p>
         <div class="buttons_fonctionnement">
           <button class="button_fonctionnement-1">
@@ -73,13 +68,13 @@
             <span class="text-fonctionnement">Dégustez au restaurant</span>
           </button>
         </div>
-      </div>
+      </section>
 
-      <div class="restaurants">
+      <section class="restaurants">
         <p class="text_restaurant">Restaurants</p>
-        <div class="cards">
+        <section class="cards">
           <a href="menu-a.html" class="card-link">
-            <div class="card card-1">
+            <figure class="card card-1">
               <img src="images/image-1.jpg" class="card-image image-1" alt="" />
               <span class="nouveau">Nouveau</span>
               <div class="containing">
@@ -87,16 +82,16 @@
                   <p class="text_card-1">La palette du goût</p>
                   <p>Ménilmontant</p>
                 </div>
-                <div class="heart">
+                <button class="heart-index">
                   <i class="fa-regular fa-heart heart-empty"></i>
                   <i class="fa-solid fa-heart heart-full"></i>
-                </div>
-              </div>
+                </button>
+              </figure>
             </div>
           </a>
 
           <a href="menu-c.html" class="card-link">
-            <div class="card card-2">
+            <figure class="card card-2">
               <img src="images/image-2.jpg" class="card-image image-2" alt="" />
               <span class="nouveau">Nouveau</span>
               <div class="containing">
@@ -104,62 +99,56 @@
                   <p class="text_card-2">La note enchantée</p>
                   <p>Charonne</p>
                 </div>
-                <div class="heart">
+                <button class="heart-index">
                   <i class="fa-regular fa-heart heart-empty"></i>
                   <i class="fa-solid fa-heart heart-full"></i>
-                </div>
+                </button>
               </div>
-            </div>
+            </figure>
           </a>
 
           <a href="menu-d.html" class="card-link">
-            <div class="card card-3">
+            <figure class="card card-3">
               <img src="images/image-3.jpg" class="card-image image-3" alt="" />
               <div class="containing">
                 <div class="text_card">
                   <p class="text_card-3">À la française</p>
                   <p>Cité Rouge</p>
                 </div>
-                <div class="heart">
+                <button class="heart-index">
                   <i class="fa-regular fa-heart heart-empty"></i>
                   <i class="fa-solid fa-heart heart-full"></i>
-                </div>
+                </button>
               </div>
-            </div>
+            </figure>
           </a>
 
           <a href="menu-b.html" class="card-link">
-            <div class="card card-4">
+            <figure class="card card-4">
               <img src="images/image-4.jpg" class="card-image image-4" alt="" />
               <div class="containing">
                 <div class="text_card">
                   <p class="text_card-4">Le délice des sens</p>
                   <p>Folie-Méricourt</p>
                 </div>
-                <div class="heart">
+                <button class="heart-index">
                   <i class="fa-regular fa-heart heart-empty"></i>
                   <i class="fa-solid fa-heart heart-full"></i>
-                </div>
+                </button>
               </div>
-            </div>
+            </figure>
           </a>
-        </div>
-      </div>
+        </section>
+      </section>
     </main>
     <footer>
-      <a href="#" class="footer_title">ohmyfood</a>
-      <div class="text_footer">
-        <div class="cutlery">
-          <img src="icons/cutlery.svg" alt="" /><a href="#"
-            >Proposer un restaurant</a
-          >
-        </div>
-        <div class="hands">
-          <img src="icons/hands.svg" alt="" /><a href="#">Devenir partenaire</a>
-        </div>
-        <a href="#">Mentions légales</a>
-        <a href="mailto:contact@ohmyfood.com">Contact</a>
-      </div>
+      <span class="footer_title">ohmyfood</span>
+      <ul class="text_footer">
+        <li class="cutlery"><i class="fa-solid fa-utensils"></i><a href="#">Proposer un restaurant</a></li>
+        <li class="hands"><i class="fa-solid fa-handshake-angle"></i><a href="#">Devenir partenaire</a></li>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+      </ul>
     </footer>
   </body>
 </html>

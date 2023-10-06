@@ -12,41 +12,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <header class="header_menu">
-      <a class="header_icon" href="index.html">
-        <i class="fas fa-arrow-left" aria-hidden="true"></i>
+      <a href="index.html">
+        <button class="header_icon">
+          <i class="fas fa-arrow-left" aria-hidden="true"></i>
+        </button>
       </a>
       <h1 class="logo">ohmyfood</h1>
     </header>
 
     <main>
-      <div class="image">
-        <img
-          src="images/image-4.jpg"
-          class="image_background"
-          alt="Le délice des sens"
-        />
-      </div>
-      <div class="menu-a">
+      <img
+        src="images/image-1.jpg"
+        class="image_background"
+        alt="La palette du goût"
+      />
+      <section class="menu menu-a">
         <div class="title">
-          <h1>Le délice des sens</h1>
-          <div class="heart">
+          <h2>Le délice des sens</h2>
+          <button class="heart">
             <i class="fa-regular fa-heart heart-empty"></i>
             <i class="fa-solid fa-heart heart-full"></i>
-          </div>
+          </button>
         </div>
         <div class="container">
-          <div class="section entrees">
-            <p class="text_entree">Entrées</p>
+          <section class="section entrees">
+            <h3 class="text_entree">Entrées</h3>
             <div class="buttons_entree button-section">
-              <div class="button_entree-1 menu-button">
+              <article class="button_entree-1 menu-button">
                 <div class="text_button">
-                  <p class="title_button">Tartare de thon</p>
+                  <h4 class="title_button">Tartare de thon</h4>
                   <p class="content_button">Assaisonné au yuzu</p>
                 </div>
                 <div class="price">25€</div>
@@ -55,11 +55,10 @@
                     <i class="fa-sharp fa-solid fa-check icon-select"></i>
                   </span>
                 </div>
-              </div>
-
-              <div class="button_entree-2 menu-button">
+              </article>
+              <article class="button_entree-2 menu-button">
                 <div class="text_button">
-                  <p class="title_button">Bouchée de homard croustillant</p>
+                  <h4 class="title_button">Bouchée de homard croustillant</h4>
                   <p class="content_button">
                     Et sa farandole de petits légumes
                   </p>
@@ -70,10 +69,12 @@
                     <i class="fa-sharp fa-solid fa-check icon-select"></i>
                   </span>
                 </div>
-              </div>
-              <div class="button_entree-3 menu-button">
+              </article>
+              <article class="button_entree-3 menu-button">
                 <div class="text_button">
-                  <p class="title_button">Poulet rôti aux herbes de Provence</p>
+                  <h4 class="title_button">
+                    Poulet rôti aux herbes de Provence
+                  </h4>
                   <p class="content_button">Et sa crème de truffe</p>
                 </div>
                 <p class="price">40€</p>
@@ -82,16 +83,18 @@
                     <i class="fa-sharp fa-solid fa-check icon-select"></i>
                   </span>
                 </div>
-              </div>
+              </article>
             </div>
-          </div>
+          </section>
 
-          <div class="section plats">
-            <p class="text_plat">Plats</p>
+          <section class="section plats">
+            <h3 class="text_plat">Plats</h3>
             <div class="buttons_plat button-section">
-              <div class="button_plat-1 menu-button">
+              <article class="button_plat-1 menu-button">
                 <div class="text_button">
-                  <p class="title_button">Poulet rôti aux herbes de Provence</p>
+                  <h4 class="title_button">
+                    Poulet rôti aux herbes de Provence
+                  </h4>
                   <p class="content_button">Et sa crème de truffe</p>
                 </div>
                 <p class="price">40€</p>
@@ -100,10 +103,10 @@
                     <i class="fa-sharp fa-solid fa-check icon-select"></i>
                   </span>
                 </div>
-              </div>
-              <div class="button_plat-2 menu-button">
+              </article>
+              <article class="button_plat-2 menu-button">
                 <div class="text_button">
-                  <p class="title_button">Langouste rôtie</p>
+                  <h4 class="title_button">Langouste rôtie</h4>
                   <p class="content_button">Et ses légumes de saison</p>
                 </div>
                 <p class="price">35€</p>
@@ -112,10 +115,10 @@
                     <i class="fa-sharp fa-solid fa-check icon-select"></i>
                   </span>
                 </div>
-              </div>
-              <div class="button_plat-3 menu-button">
+              </article>
+              <article class="button_plat-3 menu-button">
                 <div class="text_button">
-                  <p class="title_button">Côte de bœuf Angus</p>
+                  <h4 class="title_button">Côte de bœuf Angus</h4>
                   <p class="content_button">Et sa purée de panais</p>
                 </div>
                 <p class="price">44€</p>
@@ -124,16 +127,16 @@
                     <i class="fa-sharp fa-solid fa-check icon-select"></i>
                   </span>
                 </div>
-              </div>
+              </article>
             </div>
-          </div>
+          </section>
 
-          <div class="section desserts">
-            <p class="text_dessert">Desserts</p>
+          <section class="section desserts">
+            <h3 class="text_dessert">Desserts</h3>
             <div class="buttons_dessert button-section">
-              <div class="button_dessert-1 menu-button">
+              <article class="button_dessert-1 menu-button">
                 <div class="text_button">
-                  <p class="title_button">Farandole de desserts</p>
+                  <h4 class="title_button">Farandole de desserts</h4>
                   <p class="content_button">Du chef</p>
                 </div>
                 <p class="price">18€</p>
@@ -142,10 +145,10 @@
                     <i class="fa-sharp fa-solid fa-check icon-select"></i>
                   </span>
                 </div>
-              </div>
-              <div class="button_dessert-2 menu-button">
+              </article>
+              <article class="button_dessert-2 menu-button">
                 <div class="text_button">
-                  <p class="title_button">Crème brulée</p>
+                  <h4 class="title_button">Crème brulée</h4>
                   <p class="content_button">Revisitée</p>
                 </div>
                 <p class="price">22€</p>
@@ -154,10 +157,10 @@
                     <i class="fa-sharp fa-solid fa-check icon-select"></i>
                   </span>
                 </div>
-              </div>
-              <div class="button_dessert-3 menu-button">
+              </article>
+              <article class="button_dessert-3 menu-button">
                 <div class="text_button">
-                  <p class="title_button">Tiramisu</p>
+                  <h4 class="title_button">Tiramisu</h4>
                   <p class="content_button">À la noisette</p>
                 </div>
                 <p class="price">23€</p>
@@ -166,29 +169,29 @@
                     <i class="fa-sharp fa-solid fa-check icon-select"></i>
                   </span>
                 </div>
-              </div>
+              </article>
             </div>
-          </div>
+          </section>
         </div>
 
         <button class="button_order">Commander</button>
-      </div>
+      </section>
     </main>
 
     <footer>
-      <a href="#" class="footer_title">ohmyfood</a>
-      <div class="text_footer">
-        <div class="cutlery">
-          <img src="icons/cutlery.svg" alt="" /><a href="#"
-            >Proposer un restaurant</a
-          >
-        </div>
-        <div class="hands">
-          <img src="icons/hands.svg" alt="" /><a href="#">Devenir partenaire</a>
-        </div>
-        <a href="#">Mentions légales</a>
-        <a href="mailto:contact@ohmyfood.com">Contact</a>
-      </div>
+      <span class="footer_title">ohmyfood</span>
+      <ul class="text_footer">
+        <li class="cutlery">
+          <i class="fa-solid fa-utensils"></i
+          ><a href="#">Proposer un restaurant</a>
+        </li>
+        <li class="hands">
+          <i class="fa-solid fa-handshake-angle"></i
+          ><a href="#">Devenir partenaire</a>
+        </li>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+      </ul>
     </footer>
   </body>
 </html>
