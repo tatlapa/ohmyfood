@@ -101,17 +101,6 @@
     }
   }
 
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, 100%, 0);
-    }
-    100% {
-        opacity: 1;
-        transform: none;
-    }
-}
-
 @keyframes scaleUpForRight {
     0% {
         transform: scaleX(0.4);
@@ -186,7 +175,7 @@ p {
     }
 
 .header_menu {
-    padding: 0.8rem;
+    padding: 13px;
     box-shadow: 10px 1px 1px gray;
     position: relative;
 }
@@ -336,7 +325,7 @@ main .fonctionnement .buttons_fonctionnement .button_fonctionnement-3::before {
 
 .icons-fonctionnement {
     color: gray;
-    margin-left: 3rem;
+    margin-left: 48px;
 }
 
 .text-fonctionnement {
@@ -407,7 +396,7 @@ main .restaurants .cards .card .nouveau {
     color: #0F9070;
     font-size: small;
     font-weight: bold;
-    padding: 0.3rem 0.5rem;
+    padding: 5px 8px;
     position: absolute;
     top: 12px;
     right: 15px;
@@ -415,7 +404,7 @@ main .restaurants .cards .card .nouveau {
 
 .image {
     width: 100%;
-    height: 18rem;
+    height: 288px;
 }
 
 .image_background {
@@ -426,7 +415,7 @@ main .restaurants .cards .card .nouveau {
 
 .heart i {
     position:absolute;
-    right: 2rem;
+    right: 32px;
 }
 
 .heart-empty {
@@ -454,7 +443,7 @@ main .restaurants .cards .card .card-image {
     border-top-right-radius: 15px;
     object-fit: cover;
     width: 100%;
-    height: 11rem
+    height: 176px;
 }
 
 footer {
@@ -504,7 +493,7 @@ main .menu-d {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px; 
     position: relative; 
-    margin-top: -2.2rem;
+    margin-top: -35px;
 }
 
 h1 {
@@ -548,6 +537,32 @@ main .text_dessert {
     display: flex;
     flex-direction: column;
 }
+  
+@keyframes appear {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .section.entrees {
+    opacity: 0;
+    animation: appear 1s linear forwards;
+  }
+  
+  .section.plats {
+    opacity: 0;
+    animation: appear 1s 1s linear forwards;
+  }
+  
+  .section.desserts {
+    opacity: 0;
+    animation: appear 1s 2s linear forwards;
+  }
 
 .button-section .buttons_entree,
 .button-section .buttons_plat,
@@ -566,10 +581,6 @@ main .text_dessert {
     border-radius: 15px;
     box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.10);
     cursor: pointer;
-    animation-name: fadeInUp;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-delay: 0.1s;
 }
 
 
@@ -617,7 +628,7 @@ main .text_dessert {
 
 .container-button_select {
     display: none;
-    width: 4rem;
+    width: 64px;
     background-color: #99E2D0;
     justify-content: center;
     align-items: center;
@@ -639,8 +650,8 @@ main .text_dessert {
     justify-content: center;
     background-color: white;
     border-radius: 50%;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 24px;
+    width: 24px;
 }
 
 .icon-select {
@@ -670,6 +681,17 @@ main .text_dessert {
 
 @media (min-width: 768px) { 
 
+    @keyframes appear {
+        0% {
+            opacity: 0;
+            transform: translateY(100%);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
     main .fonctionnement .title_fonctionnement {
         text-align: center;
     }
@@ -682,7 +704,7 @@ main .text_dessert {
     main .fonctionnement .buttons_fonctionnement .button_fonctionnement-2,
     main .fonctionnement .buttons_fonctionnement .button_fonctionnement-3 {
     width: 30%;
-    margin: 1.5rem auto;
+    margin: 24px auto;
     }
 
     footer {
