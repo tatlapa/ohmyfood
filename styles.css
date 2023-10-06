@@ -172,6 +172,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 13px;
     }
 
 .header_menu {
@@ -272,9 +273,7 @@ main .fonctionnement .buttons_fonctionnement {
 }
 
 
-main .fonctionnement .buttons_fonctionnement .button_fonctionnement-1,
-main .fonctionnement .buttons_fonctionnement .button_fonctionnement-2,
-main .fonctionnement .buttons_fonctionnement .button_fonctionnement-3 {
+main .fonctionnement .buttons_fonctionnement .button_each {
     display: flex;
     align-items: center;
     padding-top: 28px;
@@ -289,9 +288,7 @@ main .fonctionnement .buttons_fonctionnement .button_fonctionnement-3 {
 }
 
 
-main .fonctionnement .buttons_fonctionnement .button_fonctionnement-1::before,
-main .fonctionnement .buttons_fonctionnement .button_fonctionnement-2::before,
-main .fonctionnement .buttons_fonctionnement .button_fonctionnement-3::before {
+main .fonctionnement .buttons_fonctionnement .button_each::before {
     content: "attr(data-number)"; 
     position: absolute;
     left: -12px; 
@@ -307,9 +304,7 @@ main .fonctionnement .buttons_fonctionnement .button_fonctionnement-3::before {
     justify-content: center;
 }
 
-main .fonctionnement .buttons_fonctionnement .button_fonctionnement-1:hover,
-main .fonctionnement .buttons_fonctionnement .button_fonctionnement-2:hover,
-main .fonctionnement .buttons_fonctionnement .button_fonctionnement-3:hover {
+main .fonctionnement .buttons_fonctionnement .button_each:hover {
     background-color: #F5EDFF;
 }
 
@@ -333,7 +328,8 @@ main .fonctionnement .buttons_fonctionnement .button_fonctionnement-3::before {
 .text-fonctionnement {
     font-weight: bold;
     white-space: nowrap;
-    margin-left: 50px;
+    overflow: hidden;
+    margin-left: 30px;
 }
 
 
@@ -349,7 +345,7 @@ main .restaurants {
 main .restaurants .text_restaurant {
     font-size: 24px;
     font-weight: 700;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 main .restaurants .cards {
@@ -535,22 +531,8 @@ main .text_dessert {
     flex-direction: column;
     gap: 40px;
 }
-
-.button-section {
-    display: flex;
-    flex-direction: column;
-    gap:20px;
-    margin-top: 12px;
-}
-
-.button-section .entrees,
-.button-section .plats,
-.button-section .desserts {
-    display: flex;
-    flex-direction: column;
-}
   
-@keyframes appear {
+@keyframes fadeIn {
     0% {
       opacity: 0;
       transform: translateX(100%);
@@ -563,26 +545,24 @@ main .text_dessert {
   
   .section.entrees {
     opacity: 0;
-    animation: appear 1s linear forwards;
+    animation: fadeIn 1s linear forwards;
   }
   
   .section.plats {
     opacity: 0;
-    animation: appear 1s 1s linear forwards;
+    animation: fadeIn 1s 1s linear forwards;
   }
   
   .section.desserts {
     opacity: 0;
-    animation: appear 1s 2s linear forwards;
+    animation: fadeIn 1s 2s linear forwards;
   }
 
-.button-section .buttons_entree,
-.button-section .buttons_plat,
-.button-section .buttons_dessert {
+.button-section {
     display: grid;
-    grid-template-rows: repeat(4, minmax(0, 1fr));
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: 12px;
+    gap:20px;
+    margin-top: 12px;
 }
 
 .button-section .menu-button {
@@ -697,9 +677,7 @@ main .text_dessert {
         text-align: center;
     }
 
-    main .fonctionnement .buttons_fonctionnement .button_fonctionnement-1,
-    main .fonctionnement .buttons_fonctionnement .button_fonctionnement-2,
-    main .fonctionnement .buttons_fonctionnement .button_fonctionnement-3 {
+    main .fonctionnement .buttons_fonctionnement .button_each {
     margin: 24px 100px;
     }
 
@@ -734,7 +712,7 @@ main .text_dessert {
         margin-right: 190px;
     }
 
-    @keyframes appear {
+    @keyframes fadeIn {
         0% {
             opacity: 0;
             transform: translateY(100%);
