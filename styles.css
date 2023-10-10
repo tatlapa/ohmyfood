@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: fadeOut 3s ease 1 forwards;
+    animation: fadeOut 2s ease 1 forwards;
     animation-fill-mode: both;
     cursor: wait;
 }
