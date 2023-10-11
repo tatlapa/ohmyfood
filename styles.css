@@ -418,7 +418,7 @@ main .restaurants .cards .card .nouveau {
 .heart i {
     position:absolute;
     right: 32px;
-    top: 32px;
+    top: 30px;
 }
 
 .heart-empty {
@@ -685,7 +685,6 @@ main .text_dessert {
         text-align: center;
         align-items: center;
     }
-
 }
 
 @media (min-width: 1024px) { 
@@ -712,22 +711,16 @@ main .text_dessert {
         margin-right: 190px;
     }
 
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-            transform: translateY(100%);
-          }
-          100% {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
+    .heart i {
+        right: auto;
+        position: absolute;
+    }
 
-    .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    margin: 0 2.5rem;
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:20px
     }
 
     footer {
