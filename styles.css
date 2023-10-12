@@ -581,23 +581,24 @@ main .text_dessert {
     flex-direction: column;
     gap: 5px;
     padding: 15px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
     flex:1;
     width: 100px;
 }
 
 .button-section .menu-button .title_button {
-    display: flex;
     font-size: 18px;
     font-weight: 500;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .button-section .menu-button .content_button {
-    display: flex;
     font-size: 15px;
     font-weight: 300;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .button-section .menu-button .price {
@@ -710,9 +711,11 @@ main .text_dessert {
         margin-top: 26px;
     }
 
-    .menu {
+    main .menu {
         margin-left: 190px;
         margin-right: 190px;
+        padding-left: 150px;
+        padding-right: 150px;
     }
 
     .heart i {
