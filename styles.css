@@ -285,6 +285,7 @@ main .fonctionnement .buttons_fonctionnement .button_each {
     font-weight: 500;
     font-size: 16px;
     position: relative;
+    background-color: #F6F6F6;
 }
 
 
@@ -685,6 +686,10 @@ main .text_dessert {
     footer {
         text-align: center;
         align-items: center;
+    }
+
+    main .restaurants .text_restaurant {
+        text-align: center;
     }
 }
 
