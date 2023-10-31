@@ -125,8 +125,6 @@
 }
 
 
-
-
 html, body {  
     margin: 0;
     padding: 0;
@@ -309,6 +307,11 @@ main .fonctionnement .buttons_fonctionnement .button_each:hover {
     background-color: #F5EDFF;
 }
 
+main .fonctionnement .buttons_fonctionnement .button_each:hover
+.fas {
+    color: #9356DC;
+}
+
 
 main .fonctionnement .buttons_fonctionnement .button_fonctionnement-1::before {
     content:"1";
@@ -437,7 +440,7 @@ main .restaurants .cards .card .nouveau {
 .heart-full:hover {
   opacity: 1;
   color: transparent;
-  background-image: linear-gradient(352deg, #9356DC, #FF79DA 100%);;
+  background-image: linear-gradient(352deg, #9356DC, #FF79DA 100%);
   background-clip: text;
   -webkit-background-clip: text;
 }
@@ -682,6 +685,8 @@ main .text_dessert {
     main .fonctionnement .buttons_fonctionnement .button_each {
     margin: 24px 100px;
     }
+
+
 
     footer {
         text-align: center;
